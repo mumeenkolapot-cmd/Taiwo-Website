@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiwo Integrated Resources Limited | Premium Palm Oil Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#2D5A27',
+                            lightGreen: '#4A7C43',
+                            gold: '#D4AF37',
+                            lightGold: '#F4D03F',
+                            brown: '#5D4037',
+                            cream: '#F5F5DC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-hero {
+            background: linear-gradient(135deg, #1a3a17 0%, #2D5A27 50%, #1e3a1a 100%);
+        }
+        .gradient-gold {
+            background: linear-gradient(135deg, #D4AF37 0%, #F4D03F 50%, #D4AF37 100%);
+        }
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #D4AF37 0%, #F4D03F 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="glass-effect shadow-lg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex items-center gap-3">
+                        <img src="my-logo.jpg" alt="Taiwo Integrated Resources" class="h-12 w-auto rounded-lg bg-white p-1">
+                        <div class="hidden md:block">
+                            <h1 class="text-white font-bold text-lg leading-tight">Taiwo Integrated</h1>
+                            <p class="text-brand-gold text-xs">Resources Limited</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="#home" class="text-white hover:text-brand-gold transition-colors font-medium">Home</a>
+                        <a href="#about" class="text-white hover:text-brand-gold transition-colors font-medium">About Us</a>
+                        <a href="#operations" class="text-white hover:text-brand-gold transition-colors font-medium">Operations</a>
+                        <a href="#products" class="text-white hover:text-brand-gold transition-colors font-medium">Products</a>
+                        <a href="#sustainability" class="text-white hover:text-brand-gold transition-colors font-medium">Sustainability</a>
+                        <a href="#contact" class="px-6 py-2 bg-brand-gold text-brand-green font-bold rounded-full hover:bg-brand-lightGold transition-all transform hover:scale-105">
+                            Contact Us
+                        </a>
+                    </div>
+
+                    <button class="md:hidden text-white text-2xl" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-effect border-t border-white/20">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#home" class="block text-white py-2 hover:text-brand-gold">Home</a>
+                <a href="#about" class="block text-white py-2 hover:text-brand-gold">About Us</a>
+                <a href="#operations" class="block text-white py-2 hover:text-brand-gold">Operations</a>
+                <a href="#products" class="block text-white py-2 hover:text-brand-gold">Products</a>
+                <a href="#sustainability" class="block text-white py-2 hover:text-brand-gold">Sustainability</a>
+                <a href="#contact" class="block text-brand-gold font-bold py-2">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center gradient-hero overflow-hidden">
+        <div class="absolute inset-0 opacity-30">
+            <div class="absolute inset-0 bg-[url('cocoma.png')] bg-cover bg-center"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-white space-y-6 scroll-reveal">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full border border-brand-gold/30">
+                    <span class="w-2 h-2 bg-brand-gold rounded-full animate-pulse"></span>
+                    <span class="text-sm font-medium text-brand-gold">Premium Quality Palm Oil</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+                    Cultivating <span class="text-gradient-gold">Excellence</span><br>
+                    From Farm to Global Markets
+                </h1>
+                
+                <p class="text-xl text-gray-200 max-w-lg leading-relaxed">
+                    Taiwo Integrated Resources Limited is a leading Nigerian agro-industrial company specializing in sustainable palm oil cultivation, processing, and international export.
+                </p>
+                
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#contact" class="px-8 py-4 bg-brand-gold text-brand-green font-bold rounded-full hover:bg-brand-lightGold transition-all transform hover:scale-105 shadow-lg">
+                        Get a Quote
+                    </a>
+                    <a href="#about" class="px-8 py-4 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-brand-green transition-all">
+                        Learn More
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-8 pt-8 border-t border-white/20">
+                    <div>
+                        <div class="text-3xl font-bold text-brand-gold">15+</div>
+                        <div class="text-sm text-gray-300">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-brand-gold">5000+</div>
+                        <div class="text-sm text-gray-300">Hectares</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-brand-gold">20+</div>
+                        <div class="text-sm text-gray-300">Countries</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hidden md:block relative scroll-reveal">
+                <div class="relative z-10 animate-float">
+                    <img src="palm-fruit.jpg" alt="Palm Fruits" class="rounded-2xl shadow-2xl border-4 border-brand-gold/30">
+                </div>
+                <div class="absolute -bottom-6 -left-6 w-48 h-48 bg-brand-gold/20 rounded-full blur-3xl"></div>
+                <div class="absolute -top-6 -right-6 w-48 h-48 bg-brand-lightGreen/30 rounded-full blur-3xl"></div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-gray-50 to-transparent"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="scroll-reveal">
+                    <div class="relative">
+                        <img src="1000062677.jpg" alt="Our Plantation" class="rounded-2xl shadow-xl">
+                        <div class="absolute -bottom-6 -right-6 bg-brand-green text-white p-6 rounded-xl shadow-lg">
+                            <div class="text-4xl font-bold text-brand-gold mb-1">15+</div>
+                            <div class="text-sm">Years of Excellence</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-6 scroll-reveal">
+                    <div class="inline-block px-4 py-2 bg-brand-green/10 text-brand-green rounded-full text-sm font-semibold">
+                        About Our Company
+                    </div>
+                    <h2 class="text-4xl font-bold text-gray-900 leading-tight">
+                        Nigeria's Trusted Name in <span class="text-brand-green">Palm Oil</span> Production
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Taiwo Integrated Resources Limited operates a fully integrated palm oil value chain. From our extensive plantations in Nigeria's fertile regions to our state-of-the-art processing mills, we ensure the highest quality standards at every stage.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        We specialize in producing Crude Palm Oil (CPO), Palm Kernel Oil (PKO), and various palm oil derivatives for international markets. Our commitment to sustainable practices and community development sets us apart in the global agro-commodity sector.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 pt-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-12 h-12 bg-brand-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-leaf text-brand-green text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Sustainable</h4>
+                                <p class="text-sm text-gray-600">Eco-friendly practices</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-12 h-12 bg-brand-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-award text-brand-green text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Certified</h4>
+                                <p class="text-sm text-gray-600">International standards</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-12 h-12 bg-brand-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-globe text-brand-green text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Global Export</h4>
+                                <p class="text-sm text-gray-600">Worldwide delivery</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-12 h-12 bg-brand-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-users text-brand-green text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Community</h4>
+                                <p class="text-sm text-gray-600">Local empowerment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1 space-y-6 scroll-reveal">
+                    <div class="inline-block px-4 py-2 bg-brand-gold/10 text-brand-gold rounded-full text-sm font-semibold">
+                        Leadership
+                    </div>
+                    <h2 class="text-4xl font-bold text-gray-900 leading-tight">
+                        Committed to <span class="text-brand-green">Excellence</span> & Growth
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Under visionary leadership, Taiwo Integrated Resources has grown from a small plantation to a major player in the global palm oil industry. Our commitment to quality, sustainability, and community development drives every decision we make.
+                    </p>
+                    <blockquote class="border-l-4 border-brand-gold pl-6 italic text-gray-600 text-lg">
+                        "Our mission is to produce the finest palm oil while empowering our communities and protecting our environment for future generations."
+                    </blockquote>
+                    <div class="pt-4">
+                        <div class="font-bold text-gray-900 text-lg">Chief Executive Officer</div>
+                        <div class="text-brand-green">Taiwo Integrated Resources Limited</div>
+                    </div>
+                </div>
+                
+                <div class="order-1 md:order-2 scroll-reveal">
+                    <div class="relative">
+                        <img src="my-self.jpg" alt="CEO" class="rounded-2xl shadow-2xl">
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-brand-gold/20 rounded-full blur-2xl"></div>
+                        <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-brand-green/20 rounded-full blur-2xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operations Section -->
+    <section id="operations" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 scroll-reveal">
+                <div class="inline-block px-4 py-2 bg-brand-green/10 text-brand-green rounded-full text-sm font-semibold mb-4">
+                    Our Operations
+                </div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Integrated Value Chain</h2>
+                <p class="text-gray-600 text-lg">From seedling to shipping, we control every aspect of production to guarantee quality and traceability.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift scroll-reveal border-t-4 border-brand-green">
+                    <div class="w-16 h-16 bg-brand-green/10 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-seedling text-brand-green text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Plantation</h3>
+                    <p class="text-gray-600 mb-4">5,000+ hectares of prime oil palm plantations using high-yielding Tenera variety seedlings and modern agricultural practices.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-gold"></i> Sustainable farming</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-gold"></i> High yield per hectare</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-gold"></i> Traceable sourcing</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift scroll-reveal border-t-4 border-brand-gold" style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 bg-brand-gold/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-industry text-brand-gold text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Processing Mill</h3>
+                    <p class="text-gray-600 mb-4">State-of-the-art milling facility with 60 tonnes/hour capacity, featuring sterilization, threshing, and clarification systems.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-gold"></i> High extraction rate</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-gold"></i> Quality control lab</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-gold"></i> Waste recycling</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift scroll-reveal border-t-4 border-brand-brown" style="transition-delay: 200ms;">
+                    <div class="w-16 h-16 bg-brand-brown/10 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-ship text-brand-brown text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Export & Trading</h3>
+                    <p class="text-gray-600 mb-4">Direct export capabilities to Europe, Asia, and Americas. ISO-certified storage and handling facilities at Lagos Port.</p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-gold"></i> Bulk shipping</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-gold"></i> Containerized exports</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-brand-gold"></i> Documentation support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 scroll-reveal">
+                <div class="inline-block px-4 py-2 bg-brand-green/10 text-brand-green rounded-full text-sm font-semibold mb-4">
+                    Our Products
+                </div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Premium Palm Oil Products</h2>
+                <p class="text-gray-600 text-lg">Meeting international standards for food, cosmetics, and industrial applications.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg scroll-reveal">
+                    <img src="palm-fruit.jpg" alt="Crude Palm Oil" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Crude Palm Oil (CPO)</h3>
+                        <p class="text-sm text-gray-300 mb-3">High-quality unrefined palm oil for refineries and industrial use.</p>
+                        <div class="flex items-center gap-2 text-brand-gold text-sm font-semibold">
+                            <span>View Specs</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg scroll-reveal" style="transition-delay: 100ms;">
+                    <img src="cocoma.png" alt="Palm Kernel Oil" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Palm Kernel Oil (PKO)</h3>
+                        <p class="text-sm text-gray-300 mb-3">Premium lauric oil for cosmetics, soaps, and specialty fats.</p>
+                        <div class="flex items-center gap-2 text-brand-gold text-sm font-semibold">
+                            <span>View Specs</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg scroll-reveal" style="transition-delay: 200ms;">
+                    <img src="1000062677.jpg" alt="Palm Kernel Cake" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Palm Kernel Cake</h3>
+                        <p class="text-sm text-gray-300 mb-3">High-protein animal feed ingredient for livestock nutrition.</p>
+                        <div class="flex items-center gap-2 text-brand-gold text-sm font-semibold">
+                            <span>View Specs</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg scroll-reveal" style="transition-delay: 300ms;">
+                    <img src="palm-tree.jpg" alt="Biomass" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Biomass & Fiber</h3>
+                        <p class="text-sm text-gray-300 mb-3">Empty fruit bunches and mesocarp fiber for renewable energy.</p>
+                        <div class="flex items-center gap-2 text-brand-gold text-sm font-semibold">
+                            <span>View Specs</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Specifications Table -->
+            <div class="mt-16 bg-white rounded-2xl p-8 scroll-reveal shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Product Specifications</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b-2 border-brand-green">
+                                <th class="py-4 px-4 font-bold text-brand-green">Parameter</th>
+                                <th class="py-4 px-4 font-bold text-brand-green">Crude Palm Oil</th>
+                                <th class="py-4 px-4 font-bold text-brand-green">Palm Kernel Oil</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-600">
+                            <tr class="border-b border-gray-200">
+                                <td class="py-4 px-4 font-medium">FFA (Free Fatty Acid)</td>
+                                <td class="py-4 px-4">≤ 5%</td>
+                                <td class="py-4 px-4">≤ 5%</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 bg-gray-50">
+                                <td class="py-4 px-4 font-medium">Moisture & Impurities</td>
+                                <td class="py-4 px-4">≤ 0.25%</td>
+                                <td class="py-4 px-4">≤ 0.25%</td>
+                            </tr>
+                            <tr class="border-b border-gray-200">
+                                <td class="py-4 px-4 font-medium">Iodine Value (Wijs)</td>
+                                <td class="py-4 px-4">50-55</td>
+                                <td class="py-4 px-4">16-24</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="py-4 px-4 font-medium">Packaging</td>
+                                <td class="py-4 px-4">Flexi-tanks, Drums, Bulk</td>
+                                <td class="py-4 px-4">Flexi-tanks, Drums, Bulk</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section id="sustainability" class="py-24 bg-brand-green text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute inset-0 bg-[url('palm-tree.jpg')] bg-cover bg-center"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="scroll-reveal">
+                    <div class="inline-block px-4 py-2 bg-white/10 text-brand-gold rounded-full text-sm font-semibold mb-4">
+                        Our Commitment
+                    </div>
+                    <h2 class="text-4xl font-bold mb-6">Sustainable & Responsible Production</h2>
+                    <p class="text-gray-300 text-lg mb-6 leading-relaxed">
+                        We are committed to NDPE (No Deforestation, No Peat, No Exploitation) policies. Our operations prioritize environmental stewardship, community welfare, and economic viability.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-tree text-brand-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Zero Deforestation</h4>
+                                <p class="text-gray-400 text-sm">No new planting on High Carbon Stock or High Conservation Value areas.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-hands-helping text-brand-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Community Empowerment</h4>
+                                <p class="text-gray-400 text-sm">Supporting 2,000+ smallholder farmers with training and fair pricing.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-recycle text-brand-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Circular Economy</h4>
+                                <p class="text-gray-400 text-sm">100% waste utilization - biomass for energy, effluent for fertilizer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4 scroll-reveal">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/20">
+                        <div class="text-4xl font-bold text-brand-gold mb-2">0</div>
+                        <div class="text-sm text-gray-300">Deforestation</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/20">
+                        <div class="text-4xl font-bold text-brand-gold mb-2">2,000+</div>
+                        <div class="text-sm text-gray-300">Farmers Supported</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/20">
+                        <div class="text-4xl font-bold text-brand-gold mb-2">100%</div>
+                        <div class="text-sm text-gray-300">Waste Recycled</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/20">
+                        <div class="text-4xl font-bold text-brand-gold mb-2">ISO</div>
+                        <div class="text-sm text-gray-300">Certified</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div class="scroll-reveal">
+                    <div class="inline-block px-4 py-2 bg-brand-green/10 text-brand-green rounded-full text-sm font-semibold mb-4">
+                        Get In Touch
+                    </div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Ready to Partner With Us?</h2>
+                    <p class="text-gray-600 text-lg mb-8">
+                        Whether you're looking for bulk palm oil supply, investment opportunities, or partnership inquiries, our team is ready to assist you.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-brand-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Head Office</h4>
+                                <p class="text-gray-600">123 Industrial Estate, Ibadan, Oyo State, Nigeria</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-brand-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Phone</h4>
+                                <p class="text-gray-600">+234 123 456 7890</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brand-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-brand-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Email</h4>
+                                <p class="text-gray-600">info@taiworesources.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-xl p-8 scroll-reveal">
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none transition-all" placeholder="John">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none transition-all" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            <input type="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none transition-all" placeholder="john@company.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Company Name</label>
+                            <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none transition-all" placeholder="Your Company Ltd">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Interest</label>
+                            <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none transition-all">
+                                <option>Product Inquiry</option>
+                                <option>Investment Opportunity</option>
+                                <option>Partnership</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none transition-all" placeholder="Tell us about your requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 bg-brand-green text-white font-bold rounded-lg hover:bg-brand-lightGreen transition-all transform hover:scale-[1.02] shadow-lg">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-2">
+                    <img src="my-logo.jpg" alt="Taiwo Integrated Resources" class="h-16 w-auto rounded-lg mb-4 bg-white p-2">
+                    <p class="text-gray-400 max-w-md">
+                        Leading Nigerian agro-industrial company specializing in sustainable palm oil cultivation, processing, and international export.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-brand-gold">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#products" class="hover:text-white transition-colors">Products</a></li>
+                        <li><a href="#sustainability" class="hover:text-white transition-colors">Sustainability</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-brand-gold">Certifications</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center gap-2"><i class="fas fa-certificate text-brand-gold"></i> ISO 9001:2015</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-certificate text-brand-gold"></i> HACCP Certified</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-certificate text-brand-gold"></i> SON Certified</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-certificate text-brand-gold"></i> NEPC Registered</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">&copy; 2024 Taiwo Integrated Resources Limited. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-brand-green transition-all">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-brand-green transition-all">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-gold hover:text-brand-green transition-all">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-4 right-4 bg-brand-green text-white px-6 py-3 rounded-lg shadow-lg transform translate-y-20 opacity-0 transition-all duration-300 z-50 flex items-center gap-2">
+        <i class="fas fa-check-circle text-brand-gold"></i>
+        <span id="toastMessage">Message sent successfully!</span>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+        });
+
+        // Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            showToast('Thank you! Your message has been sent successfully.');
+            e.target.reset();
+        });
+
+        // Toast Function
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+            toastMessage.textContent = message;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
